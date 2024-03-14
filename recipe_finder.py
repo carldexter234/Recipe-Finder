@@ -64,7 +64,7 @@ def main():
     query = st.text_input("Enter a recipe query:")
     if not query:
         st.warning("Please enter a recipe query.")
-        returccasdsad
+        return
 
     recipe_id = get_recipe_id(query, SPOONACULAR_API_KEY)
     if not recipe_id:
